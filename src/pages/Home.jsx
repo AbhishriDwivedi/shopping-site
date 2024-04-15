@@ -17,12 +17,13 @@ const Home = () => {
       setPosts(data);
     }
     catch(error) {
-      console.log("Error aagya ji");
+      console.log("Error in getting data.");
       setPosts([]);
     }
     setLoading(false);
   }
 
+  // for fetching data on first render
   useEffect( () => {
     fetchProductData();
   },[])

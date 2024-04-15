@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
+// must define name, initial state and reducers(functions) in a slice
 export const CartSlice = createSlice({
     name:"cart",
     initialState:[],
@@ -14,5 +14,7 @@ export const CartSlice = createSlice({
     }
 });
 
+// must export destructured reducer functions
 export const {add, remove} = CartSlice.actions;
+// must export resucer
 export default CartSlice.reducer;
